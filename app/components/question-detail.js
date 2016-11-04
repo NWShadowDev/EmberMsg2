@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  //sort score in descending order 
+  //sort score in descending order
   sortBy: ['score:desc'],
   numberOfAnswers: Ember.computed('question.answers', function() {
     return this.get('question.answers').content.length;
@@ -22,6 +22,12 @@ export default Ember.Component.extend({
     },
     saveAnswerSender(params){
       this.sendAction('saveAnswerSender', params);
-    }
+    },
+    upVoteSender(answer, score){
+      this.sendAction('upVoteSender', answer, score);
+    },
+    downVoteSender(answer, score){
+      this.sendAction('downVoteSender', answer, score);
+    },
   }
 });
