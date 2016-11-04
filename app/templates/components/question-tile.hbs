@@ -1,7 +1,8 @@
-<div class="container" id="heading{{index}}">
+<div class="container" id="questions">
   <h4>{{question.content}}</h4>
-</div>
+
 <p>By: {{question.author}}</p>
 <div class="container">
-  {{#link-to 'question' question.id}}<button class="bnt" type="button" name="button">More Info!</button>{{/link-to}}
+  {{#link-to 'question' question.id}}<button class="btn" type="button" name="button">More Info!</button>{{/link-to}}
+</div>
 </div>

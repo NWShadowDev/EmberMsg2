@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'ember-msg-js',
+    modulePrefix: 'ember-msg',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
