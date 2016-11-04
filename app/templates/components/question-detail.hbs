@@ -1,7 +1,8 @@
 <div class="container" id="questions">
-  <li>{{question.content}}</li>
-  <li>By: {{question.author}}</li>
-  <li>Notes: {{question.notes}}</li>
+  <li><h3>{{question.content}}</h3></li>
+  <li><em>By: {{question.author}}</em></li>
+  <br>
+  <li><strong>Notes: {{question.notes}}</strong></li>
   <button {{action 'deleteQuestionHandler' question}} type="button" class="btn">Delete Question</button>
 {{update-question updateQuestionSender="updateQuestionSender" question=question}}
 {{new-answer saveAnswerSender="saveAnswerSender" question=question}}
