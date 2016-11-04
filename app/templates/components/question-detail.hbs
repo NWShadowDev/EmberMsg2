@@ -3,10 +3,13 @@
   <li><em>By: {{question.author}}</em></li>
   <br>
   <li><strong>Notes: {{question.notes}}</strong></li>
-  <h4>{{answer-format numberOfAnswers}}</h4>
+
   <button {{action 'deleteQuestionHandler' question}} type="button" class="btn">Delete Question</button>
 {{update-question updateQuestionSender="updateQuestionSender" question=question}}
 {{new-answer saveAnswerSender="saveAnswerSender" question=question}}
+</div>
+<div class="container">
+    <h4>{{answer-format numberOfAnswers}}</h4>
 </div>
 
 <div class="container" id="answers">
