@@ -1,3 +1,5 @@
-<h4>By: {{answer.author}}</h4>
-<h3>Answer: {{answer.content}}</h3>
+<div id="answerTile">
+<h3>By: {{answer.author}}</h3>
+<h4><em>Answer: {{answer.content}}</em></h4>
 <button class="btn" type="button" {{action 'deleteAnswerHandler' answer}}>Delete Answer</button><br>
+</div>

@@ -4,14 +4,20 @@ body {
   background-size: contain;
   background-attachment: fixed;
   h3{
-    color: goldenrod;
+    color: white;
+  }
+  h4 {
+    color: white;
+  }
+  label {
+    color: white;
   }
   .btn {
     background-color: black;
     margin: 20px 5px 5px 5px;
     color: white;
     font-weight: bold;
-    border: 2px solid goldenrod;
+    border: 2px solid white;
     &:hover {
       background-color: goldenrod;
       color: black;
@@ -27,17 +33,17 @@ body {
   }
   .jumbotron {
     text-align: center;
-    background-color: black;
-    border: 5px solid goldenrod;
-    color: white;
+    background-image: url('../img/banner.png');
+    width: 1140px;
+    height: 196px;
   }
   input {
     color: black;
-
   }
+
   #questions, #newQuestion {
     margin: 30px;
-    background-color: black;
+    background-image: url('http://sergimateo.com/wp-content/2012/12/madera-3.jpg');
     padding: 20px 10px 10px 10px;
     border: 5px solid goldenrod;
     color: white;
@@ -49,4 +55,13 @@ body {
     background-image: url('http://sergimateo.com/wp-content/2012/12/madera-3.jpg');
     color: white;
   }
+}
+
+#answerTile {
+  margin: 30px;
+  background-image: url('http://sergimateo.com/wp-content/2012/12/madera-3.jpg');
+  padding: 20px 10px 10px 10px;
+  border: 5px solid goldenrod;
+  color: white;
+  list-style-type: none;
 }
