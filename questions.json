@@ -29,17 +29,20 @@
     {
       "content": "African or European?",
       "author": "Monty",
-      "question": "0"
+      "question": "0",
+      "score": 30
     },
     {
       "content": "Blue...No Yellow...AHHH",
       "author": "Monty",
-      "question": "1"
+      "question": "1",
+      "score": 30
     },
     {
       "content": "Leia Organa",
       "author": "George Lucas",
-      "question": "2"
+      "question": "2",
+      "score": 30
     }
   ]
 }
