@@ -13,6 +13,7 @@
       {{input class="form-control" value=notes id="notes"}}
     </div>
     <button {{action 'saveQuestionHandler'}} class="btn" type="button" name="button">Add Question</button>
+    <button {{action 'cancelSaveQuestion'}} type="button" class="btn">Cancel</button>
   </form>
   {{else}}
     <button {{action 'questionFormShow'}} class="btn" type="button" name="button">New Question</button>
