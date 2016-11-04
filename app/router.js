@@ -11,6 +11,7 @@ Router.map(function() {
     path: '/question/:question_id'
   });
   this.route('contact');
+  this.route('projects');
 });
 
 export default Router;

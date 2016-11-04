@@ -28,6 +28,10 @@ body {
       background-color: white;
       color: black;
     }
+    &:active {
+      background-color: black;
+      color: white;
+    }
   }
   ul {
     li {
@@ -64,6 +68,7 @@ body {
   h2, li , a {
     color: white;
     list-style-type: none;
+    text-align: center;
     #name {
       font-size: 20pt;
     }
@@ -76,4 +81,13 @@ body {
   border: 5px solid goldenrod;
   color: white;
   list-style-type: none;
+}
+
+#contact {
+  margin-top: 20px;
+  background-color: black;
+  padding: 30px 10px;
+  border: 2px solid white;
+  width: 500px;
+  height: 200px;
 }

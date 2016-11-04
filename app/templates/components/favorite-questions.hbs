@@ -1,0 +1,19 @@
+{{outlet}}
+<h1>Favorite Questions</h1>
+<div class="favorite-questions row">
+  <ul>
+    {{#each favoriteQuestion.questions as |question|}}
+    {{#link-to 'questions.question' question}}
+      <li>{{question}}</li>
+      <div class="favorite question taken">
+        {{question.content}} - By:{{question.author}}
+        <br>{{#if model.onList}}
+        <h3>Already Favorited!</h3>
+        {{else}}
+          <button class="btn" type="button" name="button" {{action 'add'}}></button>
+        {{/if}}
+      </div>
+      {{/link-to}}
+    {{/each}}
+  </ul>
+</div>
