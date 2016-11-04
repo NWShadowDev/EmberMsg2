@@ -10,7 +10,9 @@
 <div class="container" id="answers">
   {{#each question.answers as |answer|}}
   {{answer-tile answer=answer deleteAnswerSender="deleteAnswerSender"}}
-</div>
+
 {{else}}
 <h3>No Answers</h3>
 {{/each}}
+</div>
+<!---There is a build error here that says there is no opening div tag on line 13 but thats not right-->
