@@ -1,7 +1,12 @@
-# Ember-msg
+![banner](https://github.com/NWShadowDev/EmberMsg2/blob/master/public/img/banner.png)
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+#### _Question and Answers Message Board November 3rd (V1/V2) & 4th(V2.1) 2016_
+
+#### By _Amber Farrington_
+
+## Description
+
+_This app is designed to be a user message board where you can add questions and answers and vote_
 
 ## Prerequisites
 
@@ -19,6 +24,9 @@ You will need the following things properly installed on your computer.
 * `cd ember-msg`
 * `npm install`
 * `bower install`
+* `ember install emberfire`
+* `ember install ember-bootstrap`
+* `ember install ember-cli-sass`
 
 ## Running / Development
 
@@ -51,3 +59,8 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+  ### License
+
+*This application is licensed under the MIT license*
+
+Copyright (c) 2016 **Amber Farrington**

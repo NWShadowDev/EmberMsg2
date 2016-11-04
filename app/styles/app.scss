@@ -12,6 +12,11 @@ body {
   label {
     color: white;
   }
+  #nav {
+    text-align: center;
+    margin: auto;
+    display: block;
+  }
   .btn {
     background-color: black;
     margin: 20px 5px 5px 5px;
@@ -20,7 +25,7 @@ body {
     border: 2px solid white;
     list-style-type: none;
     &:hover {
-      background-color: goldenrod;
+      background-color: white;
       color: black;
     }
   }
