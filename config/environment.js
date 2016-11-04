@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'ember-msg',
+    modulePrefix: 'ember-msg-js',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
@@ -15,6 +15,12 @@ module.exports = function(environment) {
         // Prevent Ember Data from overriding Date.parse.
         Date: false
       }
+    },
+    firebase: {
+      apiKey: "AIzaSyAJhErCPwVblIKHaDLcgzw9zZticwbK1jU",
+      authDomain: "emberboard-3b87f.firebaseapp.com",
+      databaseURL: "https://emberboard-3b87f.firebaseio.com",
+      storageBucket: "emberboard-3b87f.appspot.com"
     },
 
     APP: {
