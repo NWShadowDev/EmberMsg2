@@ -1,0 +1,15 @@
+{{outlet}}
+<div class="container">
+  <img src="../img/Welcome.png">
+  <div class="form-group">
+    <label for="login">Username</label>
+    <input type="text" name="name" placeholder="Enter Username">
+  </div>
+  <div class="form-group">
+    <label for="login">Password</label>
+    <input type="text" name="name" placeholder="Enter Password">
+  </div>
+  <h3>This is just a dummy login page for some fun!</h3>
+  <h4>Click the button to go to the home page!</h4>
+  {{#link-to 'index'}}<button class="btn" type="button" name="button">Index</button>{{/link-to}}
+</div>
