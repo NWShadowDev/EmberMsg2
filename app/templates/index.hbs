@@ -1,1 +1,10 @@
-{{outlet}}
+<div class="container">
+<h3>Click on a Question to toggle details!</h3>
+{{new-question saveQuestionSender="saveQuestion"}}
+</div>
+<div class="container">
+  {{#each model as |question index|}}
+  {{question-tile question=question index=index}}
+  {{else}}
+  {{/each}}
+</div>
