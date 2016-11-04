@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export function answerFormat(params/*, hash*/) {
   if (params[0] === 0) {
-    return "Post some answers already!!"
+    return "Post some answers already!!";
   }else if(params[0] < 2){
     return params[0] + " person answered";
   }
