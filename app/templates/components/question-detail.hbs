@@ -3,6 +3,7 @@
   <li><em>By: {{question.author}}</em></li>
   <br>
   <li><strong>Notes: {{question.notes}}</strong></li>
+  <h4>{{answer-format numberOfAnswers}}</h4>
   <button {{action 'deleteQuestionHandler' question}} type="button" class="btn">Delete Question</button>
 {{update-question updateQuestionSender="updateQuestionSender" question=question}}
 {{new-answer saveAnswerSender="saveAnswerSender" question=question}}
@@ -10,10 +11,11 @@
 
 <div class="container" id="answers">
   {{#each question.answers as |answer|}}
-  {{answer-tile answer=answer deleteAnswerSender="deleteAnswerSender"}}
+   {{#each sortedScores as |answer|}}
+  {{answer-tile answer=answer deleteAnswerSender="deleteAnswerSender" upVoteSender="upVoteSender" downVoteSender="downVoteSender"}}
 
 {{else}}
 <h3>No Answers</h3>
 {{/each}}
+{{/each}}
 </div>
-<!---There is a build error here that says there is no opening div tag on line 13 but thats not right-->
