@@ -2,7 +2,7 @@
   {{question.content}}
   By: {{question.author}}
   Notes: {{question.notes}}
-  <button {{action 'deleteQuestionHandler'}} type="button" class="btn">Delete Question</button>
+  <button {{action 'deleteQuestionHandler' question}} type="button" class="btn">Delete Question</button>
 {{update-question updateQuestionSender="updateQuestionSender" question=question}}
 {{new-answer saveAnswerSender="saveAnswerSender" question=question}}
 </div>
