@@ -3,10 +3,12 @@ body {
   background-image: url('http://deskbg.com/s3/wpp/5/5335/legend-zelda-tiles-desktop-background.jpg');
   background-size: contain;
   background-attachment: fixed;
-  color: goldenrod;
+  h3{
+    color: goldenrod;
+  }
   .btn {
     background-color: black;
-    margin: 5px 5px 5px 5px;
+    margin: 20px 5px 5px 5px;
     color: white;
     font-weight: bold;
     border: 2px solid goldenrod;
@@ -15,25 +17,36 @@ body {
       color: black;
     }
   }
-  ul li {
-    list-style-type: none;
-    font-size: 14pt;
-    margin-top: 10px;
+  ul {
+    li {
+      list-style-type: none;
+      font-size: 14pt;
+      margin-top: 10px;
+      color: white;
+    }
   }
   .jumbotron {
     text-align: center;
     background-color: black;
     border: 5px solid goldenrod;
+    color: white;
   }
   input {
     color: black;
 
   }
   #questions, #newQuestion {
-    opacity: 0.7;
     margin: 30px;
     background-color: black;
     padding: 20px 10px 10px 10px;
     border: 5px solid goldenrod;
+    color: white;
+    list-style-type: none;
+  }
+}
+.container {
+  #questions {
+    background-image: url('http://sergimateo.com/wp-content/2012/12/madera-3.jpg');
+    color: white;
   }
 }
