@@ -1,11 +1,11 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  actions: {
-    delete(question) {
-      if (confirm('Are you sure you want to delete this question?')) {
-        this.sendAction('deleteQuestionHandler', question);
-      }
-    }
-  }
+
+  numberOfAnswers: Ember.computed('question.answers', function() {
+    return this.get('question.answers').content.length;
+  }),
+
+  sortBy: ['score:desc'],
+  sortedAnswers: Ember.computed.sort('question.answers', 'sortBy'),
 });
