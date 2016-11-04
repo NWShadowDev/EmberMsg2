@@ -1,6 +1,8 @@
 <div id="answerTile">
-<h3>By: {{answer.author}}</h3>
-<h4><em>Answer: {{answer.content}}</em></h4>
-<h3><strong>Score: {{answer.score}}</strong></h3>
-<button class="btn" type="button" {{action 'deleteAnswerHandler' answer}}>Delete Answer</button><br>
+  <h3>By: {{answer.author}}</h3>
+  <h4><em>Answer: {{answer.content}}</em></h4>
+  <h3><strong>Score: {{answer.score}}</strong></h3>
+  <button class="btn" type="button" {{action 'deleteAnswerHandler' answer}}>Delete Answer</button><br>
+  <button type="button" class="btn" {{action 'upVoteHandler' answer answer.score}}>Upvote</button>
+  <button type="button" class="btn" {{action 'downVoteHandler' answer answer.score}}>Downvote</button>
 </div>
