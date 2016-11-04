@@ -1,0 +1,39 @@
+body {
+  background-color: black;
+  background-image: url('http://deskbg.com/s3/wpp/5/5335/legend-zelda-tiles-desktop-background.jpg');
+  background-size: contain;
+  background-attachment: fixed;
+  color: goldenrod;
+  .btn {
+    background-color: black;
+    margin: 5px 5px 5px 5px;
+    color: white;
+    font-weight: bold;
+    border: 2px solid goldenrod;
+    &:hover {
+      background-color: goldenrod;
+      color: black;
+    }
+  }
+  ul li {
+    list-style-type: none;
+    font-size: 14pt;
+    margin-top: 10px;
+  }
+  .jumbotron {
+    text-align: center;
+    background-color: black;
+    border: 5px solid goldenrod;
+  }
+  input {
+    color: black;
+
+  }
+  #questions, #newQuestion {
+    opacity: 0.7;
+    margin: 30px;
+    background-color: black;
+    padding: 20px 10px 10px 10px;
+    border: 5px solid goldenrod;
+  }
+}
