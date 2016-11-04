@@ -1,0 +1,16 @@
+<div class="container" id="questions">
+  {{question.content}}
+  By: {{question.author}}
+  Notes: {{question.notes}}
+  <button {{action 'deleteQuestionHandler'}} type="button" class="btn">Delete Question</button>
+{{update-question updateQuestionSender="updateQuestionSender" question=question}}
+{{new-answer saveAnswerSender="saveAnswerSender" question=question}}
+</div>
+
+<div class="container" id="answers">
+  {{#each question.answers as |answer|}}
+  {{answer-tile answer=answer deleteAnswerSender="deleteAnswerSender"}}
+</div>
+{{else}}
+<h3>No Answers</h3>
+{{/each}}
