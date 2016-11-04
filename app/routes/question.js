@@ -33,6 +33,14 @@ export default Ember.Route.extend({
     },
     deleteAnswer(answer){
       answer.destroyRecord();
+    },
+    upVote(answer, score){
+      answer.set("score",score);
+      answer.save();
+    },
+    downVote(answer, score){
+      answer.set("score",score);
+      answer.save();
     }
   }
 });
