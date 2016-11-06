@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   actions: {
-    favoriteQuestionHandler(question)
+    favoriteQuestionHandler(question) {
     this.sendAction('favoriteQuestionHandler', question);
   }
   },
