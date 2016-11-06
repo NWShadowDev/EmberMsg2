@@ -3,7 +3,7 @@
   <li><em>By: {{question.author}}</em></li>
   <br>
   <li><strong>Notes: {{question.notes}}</strong></li>
-
+  <button class="btn" type="button" {{action 'favoriteQuestionHandler' question}}>Favorite</button>
   <button {{action 'deleteQuestionHandler' question}} type="button" class="btn">Delete Question</button>
 {{update-question updateQuestionSender="updateQuestionSender" question=question}}
 {{new-answer saveAnswerSender="saveAnswerSender" question=question favoriteQuestions="favoriteQuestions"}}
