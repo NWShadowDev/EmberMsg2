@@ -5,13 +5,8 @@
     {{#each favoriteQuestion.questions as |question|}}
     {{#link-to 'questions.question' question}}
       <li>{{question}}</li>
-      <div class="favorite question taken">
+      <div>
         {{question.content}} - By:{{question.author}}
-        <br>{{#if model.onList}}
-        <h3>Already Favorited!</h3>
-        {{else}}
-          <button class="btn" type="button" name="button" {{action 'add'}}>Favorite</button>
-        {{/if}}
       </div>
       {{/link-to}}
     {{/each}}
