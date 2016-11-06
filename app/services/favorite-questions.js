@@ -13,7 +13,7 @@ export default Ember.Service.extend({
     this.get('questions').removeObject(question)
   },
   includes(question) {
-    return this.get('monsters').includes(question)
+    return this.get('questions').includes(question)
   },
   questionExists: Ember.computed.get('question.length')
 });
