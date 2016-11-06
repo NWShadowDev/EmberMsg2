@@ -3,6 +3,10 @@
 
 <p>By: {{question.author}}</p>
 <p>{{answer-format numberOfAnswers}}</p>
-  <button class="btn" type="button" {{action 'favoriteQuestionHandler' question}}>Favorite</button>
+{{#if question.onList}}
+   <button class="btn" type="button" {{action 'removeFavoriteQuestionHandler' question}}>Remove</button>
+    {{else}}
+    <button class="btn" type="button" {{action 'favoriteQuestionHandler' question}}>Favorite</button>
+{{/if}}
   {{#link-to 'question' question.id}}<button class="btn" type="button" name="button">Question Details</button>{{/link-to}}
 </div>

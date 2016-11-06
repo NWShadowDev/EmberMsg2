@@ -7,6 +7,10 @@ export default Ember.Component.extend({
      this.get('favoriteQuestions').add(question);
   }
   },
+  removeFavoriteQuestionHandler(question) {
+    this.get('favoriteQuestions').remove(question);
+  }
+  },
 
   numberOfAnswers: Ember.computed('question.answers', function() {
     return this.get('question.answers').content.length;
