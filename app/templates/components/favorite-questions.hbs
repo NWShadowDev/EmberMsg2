@@ -1,14 +1,11 @@
 {{outlet}}
 <h1>Favorite Questions</h1>
-<div class="favorite-questions row">
-  <ul>
-    {{#each favoriteQuestion.questions as |question|}}
-    {{#link-to 'questions.question' question}}
-      <li>{{question}}</li>
-      <div>
-        {{question.content}} - By:{{question.author}}
-      </div>
-      {{/link-to}}
+ <div class="favorite-questions row" id="questions">
+    <ul>
+    {{#each favoriteQuestions.questions as |question|}}
+    <div>
+      {{question.content}} - By:{{question.author}}
+    </div>
     {{/each}}
-  </ul>
-</div>
+    </ul>
+  </div>
