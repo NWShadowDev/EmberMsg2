@@ -5,7 +5,6 @@ export default Ember.Component.extend({
   actions: {
     favoriteQuestionHandler(question) {
      this.get('favoriteQuestions').add(question);
-  }
   },
   removeFavoriteQuestionHandler(question) {
     this.get('favoriteQuestions').remove(question);
