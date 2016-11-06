@@ -6,7 +6,7 @@ export function answerFormat(params/*, hash*/) {
   }else if(params[0] < 2){
     return params[0] + " person answered";
   }
-  else if(params[0] < 10){
+  else if(params[0] < 3){
     return params[0] + " people answered";
   }
   return Ember.String.htmlSafe("<span class='glyphicon glyphicon-heart' aria-hidden='true'></span>&nbsp;<span>" + params[0] + " people answered" + "</span>");
