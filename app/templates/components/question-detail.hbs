@@ -13,12 +13,10 @@
 </div>
 
 <div class="container" id="answers">
-  {{#each question.answers as |answer|}}
    {{#each sortedScores as |answer|}}
   {{answer-tile answer=answer deleteAnswerSender="deleteAnswerSender" upVoteSender="upVoteSender" downVoteSender="downVoteSender"}}
 
 {{else}}
 <h3>No Answers</h3>
-{{/each}}
 {{/each}}
 </div>
